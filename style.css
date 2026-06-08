@@ -1,0 +1,129 @@
+*{
+    font-family:'Open Sans', sans-serif;
+    margin:0px;
+}
+body{
+    margin:0px;
+}
+.container{
+    background-color: black;
+    background-size:cover;
+    min-height:100vh;
+
+    max-width:100%;
+    display:grid;
+    grid-template-columns: auto 4fr 3fr;
+}
+.sidebar{
+    width: 80px;
+    transition: width 0.3s;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin:2px;
+}
+.sidebar span{
+    display:none;
+}
+.sidebar:hover{
+    width: 200px;
+}
+.sidebar:hover span{
+    display:inline;
+}
+.logo{
+    font-size: 18px;
+    color: white;
+    width:30px;
+    margin-bottom: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-bete;
+
+}
+span{
+    color: white;
+    margin-left: 10px;
+}
+.main-content{
+    background-color: black;
+    margin:2px;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stories{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+}
+.img-cir{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: radial-gradient(#ff0000, #ff7f00, #0000ff, #008000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.img{
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin: 20px;
+}
+.carousell{
+    width: 400px;
+    height: 400px;
+}
+.post-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: black;
+    margin-top: 20px;
+}
+.post-img{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.user{
+    font-size: 18px;
+    color: white;  
+    margin:10px; 
+}
+.icon{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+.icon-heart{
+    transition: color 0.3s;
+}    
+.icon-heart:hover{
+    color: red;
+    transform: scale(1.2);
+
+}
+.post-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 20px;
+    margin-top: 10px;
+}
+.icons{
+    margin-left: auto;
+}
